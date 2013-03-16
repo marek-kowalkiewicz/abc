@@ -1,0 +1,28 @@
+[{
+	"id": "VACATION",
+	"name": "Vacation",
+	"entitlement": "53 days",
+	"availableBalance": "41 days",
+	"pendingItems":"1 pending items"
+},
+{
+	"id": "WORK_ACCIDENT",
+	"name": "Work Accident",
+	"entitlement": "n/a",
+	"availableBalance": "n/a",
+	"pendingItems":"0 pending items"
+},
+{
+	"id": "SICK_LEAVE",
+	"name": "Sick Leave",
+	"entitlement": "n/a",
+	"availableBalance": "n/a",
+	"pendingItems":"0 pending items"
+},
+{
+	"id": "UNPAID_LEAVE",
+	"name": "Unpaid Leave",
+	"entitlement": "n/a",
+	"availableBalance": "n/a",
+	"pendingItems":"0 pending items"
+}]

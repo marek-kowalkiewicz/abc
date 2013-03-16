@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title>Untitled Project</title>
+
+ 			<script id="sap-ui-bootstrap"
+					type="text/javascript"
+					src="resources/sap-ui-core.js"
+					data-sap-ui-libs="sap.m"
+					data-sap-ui-theme="sap_mvi" >
+			</script>
+			<!-- add other libraries to 'data-sap-ui-libs' attribute if required -->
+
+			<link href="css/base.css" type="text/css" rel="stylesheet" />
+			<link href="css/app.css" type="text/css" rel="stylesheet" />
+			<link href="component/hr/detailslist/css/ListRepeater.css" type="text/css" rel="stylesheet" />
+
+			<script type="text/javascript">
+				jQuery.sap.registerModulePath('untitledproject', './'); 
+				jQuery.sap.registerModulePath("sap.ui.core.Application", "./sap/ui/core/Application");
+
+				jQuery.sap.require("untitledproject.Application");
+				var oApp = new untitledproject.Application({
+					root : "content",
+					homePage : "leaveRequestsPage",
+					leaveRequestModelUri : "model/leaverequest.json", 
+					imageModelUri : "model/img.json",
+					locale : "en"
+				});
+			</script>
+
+	</head>
+		<body id="sapUiBody" class="sapUiBody" role="application">
+			<div id="content"></div>
+		</body>
+</html>

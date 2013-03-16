@@ -1,0 +1,15 @@
+<template data-controller-name="untitledproject.component.hr.detailslist.view.DetailsList">
+
+	<div data-sap-ui-type="untitledproject.component.hr.detailslist.control.ListRepeater" id="pageDetailsListRepeater" data-lists={/}>
+		<div data-sap-ui-type="sap.m.List" id="pageDetailsListRepeaterList" data-inset="true">
+			<div data-sap-ui-type="sap.m.DisplayListItem" data-label="{i18n>view.DetailsList.from}"></div>
+			<div data-sap-ui-type="sap.m.DisplayListItem" data-label="{i18n>view.DetailsList.to}"></div>
+			<div data-sap-ui-type="sap.m.CustomListItem">
+				<div data-sap-ui-type="sap.m.FlexBox" data-justify-content="SpaceBetween">
+					<div data-sap-ui-type="untitledproject.component.hr.detailslist.control.StateImage" data-state="{state}"></div>
+					<div data-sap-ui-type="sap.m.Label" data-text="{length}"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

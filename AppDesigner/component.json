@@ -1,0 +1,20 @@
+{
+  "name" : "untitledproject",
+  "description" : "Leave Request Application",
+  "contributors" : [ {
+    "name" : "Tino Butz",
+    "email" : "tino.butz@sap.com"
+  }, {
+    "name" : "Stefan Hipfel",
+    "email" : "stefan.hipfel@sap.com"
+  } ],
+  "version" : "1.0",
+  "main" : "Application.js",
+  "dependencies" : {
+    "sap.m" : "1.7",
+    "sap.app.component.hr.LeaveRequestList" : "1.0",
+    "sap.app.component.hr.DetailsList" : "1.0"
+  },
+  "keywords" : [ "HR" ],
+  "images" : { }
+}

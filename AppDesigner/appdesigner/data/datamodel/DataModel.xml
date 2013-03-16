@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  <?xml version="1.0" encoding="UTF-8" standalone="true"?>  -->
+
+
+   <Schema xmlns="http://schemas.microsoft.com/ado/2007/05/edm" Namespace="AppDesignerDataModel"> 
+
+ 	<EntityType Name="LeaveRequestType"> 
+ 		<Key> 
+ 			<PropertyRef Name="id"/>
+ 		</Key> 
+ 		<Property Name="id" 				Type="Edm.String"/> 
+ 		<Property Name="name" 				Type="Edm.String"/>
+ 		<Property Name="entitlement" 		Type="Edm.String"/> 		
+ 		<Property Name="availableBalance"	Type="Edm.String"/> 
+ 		<Property Name="pendingItems" 		Type="Edm.String"/> 		
+ 		
+	</EntityType>
+	
+ 	<EntityType Name="LeaveRequest"> 
+ 		<Key> 
+ 			<PropertyRef Name="id"/>
+ 			<PropertyRef Name="type"/>
+ 		</Key> 
+ 		<Property Name="id" 	Type="Edm.String"/> 
+ 		<Property Name="type" 	Type="Edm.String"/> 		
+ 		<Property Name="from" 	Type="Edm.String"/>
+ 		<Property Name="to"	 	Type="Edm.String"/> 
+ 		<Property Name="length"	Type="Edm.String"/> 
+ 		<Property Name="state"	Type="Edm.String"/>  				
+	</EntityType>	
+ 
+	
+	<Association Name="AS_LeaveRequestType_2_LeaveRequest">
+  		<End Type="AppDesignerDataModel.LeaveRequestType" 	Multiplicity="1" />
+		<End Type="AppDesignerDataModel.LeaveRequest"		Multiplicity="*" />
+  		
+  		<ReferentialConstraint>
+    		<Principal Role="AppDesignerDataModel.LeaveRequestType">
+      			<PropertyRef Name="id" />
+    		</Principal>
+    		<Dependent Role="AppDesignerDataModel.LeaveRequest">
+      			<PropertyRef Name="type" />
+    		</Dependent>
+  		</ReferentialConstraint>		
+	</Association>	
+	
+</Schema> 

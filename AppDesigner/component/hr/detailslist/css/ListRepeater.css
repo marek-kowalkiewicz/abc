@@ -1,0 +1,13 @@
+/* ============================================= */
+/* CSS for control sap.ui.appdesigner/ListRepeater.control */
+/* ============================================= */
+
+.sapUiAppdesignerAppovalState{
+
+}
+
+.appdesignerApprovalStateImg{
+	padding: 0 10px;
+	height: 20px;
+	vertical-align: middle;	
+}

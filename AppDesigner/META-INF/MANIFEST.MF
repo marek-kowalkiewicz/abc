@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 x-sap-ui-ScmRevision: 
 x-sap-ui5-ScmRevision: 
-x-sap-ui-BuildTimestamp: 201303151149
+x-sap-ui-BuildTimestamp: 201303141231
 Built-By: uitools
 Build-Jdk: 1.6.0_30
 Created-By: Apache Maven 3.0.4
-x-sap-ui5-BuildTimestamp: 201303151149
+x-sap-ui5-BuildTimestamp: 201303141231
 Archiver-Version: Plexus Archiver
 

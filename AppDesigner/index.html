@@ -1,8 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<title>Untitled Project</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">			
 
  			<script id="sap-ui-bootstrap"
 					type="text/javascript"
@@ -10,28 +9,34 @@
 					data-sap-ui-libs="sap.m"
 					data-sap-ui-theme="sap_mvi" >
 			</script>
-			<!-- add other libraries to 'data-sap-ui-libs' attribute if required -->
-
-			<link href="css/base.css" type="text/css" rel="stylesheet" />
-			<link href="css/app.css" type="text/css" rel="stylesheet" />
-			<link href="component/hr/detailslist/css/ListRepeater.css" type="text/css" rel="stylesheet" />
-
+			<!-- add other libraries to 'data-sap-ui-libs' if required -->
+			
 			<script type="text/javascript">
-				jQuery.sap.registerModulePath('untitledproject', './'); 
-				jQuery.sap.registerModulePath("sap.ui.core.Application", "./sap/ui/core/Application");
-
+				jQuery.sap.registerModulePath('untitledproject', './');
 				jQuery.sap.require("untitledproject.Application");
-				var oApp = new untitledproject.Application({
-					root : "content",
-					homePage : "leaveRequestsPage",
-					leaveRequestModelUri : "model/leaverequest.json", 
-					imageModelUri : "model/img.json",
-					locale : "en"
-				});
+				var oApplication = new untitledproject.Application();
+				oApplication.main();
 			</script>
 
-	</head>
-		<body id="sapUiBody" class="sapUiBody" role="application">
-			<div id="content"></div>
-		</body>
+      <link href="css/approvalStyle.css" type="text/css" rel="stylesheet" />
+	
+	  <style>
+	       #main--DetailPage--DetailFooter1 {
+	      background-image: -webkit-linear-gradient(top,rgb(145, 196, 77) 0,rgb(62, 109, 1) 100%);
+          box-shadow: inset 0 0.0625em 1px rgb(208, 237, 152),inset 0 0.0625em 1px rgb(40, 91, 39);
+          -webkit-box-shadow: inset 0 0.0625em 1px rgb(208, 237, 152),inset 0 0.0625em 1px rgb(40, 91, 39)
+	       }
+	       #main--DetailPage--DetailFooter2 {
+	       background-image: -webkit-linear-gradient(top,#b21212 0,#630a0a 100%);
+           box-shadow: inset 0 0.0625em 1px rgb(243, 109, 109),inset 0 0.0625em 1px #bc3636;
+          -webkit-box-shadow: inset 0 0.0625em 1px rgb(213, 126, 126),inset 0 0.0625em 1px #bc3636;        
+	       }       
+	  </style>
+	  
+		</head>	
+		
+	<body id="sapUiBody" class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+		
 </html>

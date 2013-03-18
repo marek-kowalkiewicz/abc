@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  
+  
+  <!--**************************************************************************
+  * POM SECTION: Parent POM Settings
+  ***************************************************************************-->
+
+  <parent>
+    <groupId>com.sap.ui5</groupId>
+    <artifactId>maven-webapp-pom</artifactId>
+    <version>1.11.1-SNAPSHOT</version>
+  </parent>
+
+
+  <!--**************************************************************************
+  * POM SECTION: Maven Settings
+  ***************************************************************************-->
+
+  <groupId>com.sap.ui5.appdesigner.content</groupId>
+  <artifactId>fla-approval</artifactId>
+  <version>0.8.2-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+
+  <!--**************************************************************************
+  * POM SECTION: Project Settings
+  ***************************************************************************-->
+
+  <name>${project.artifactId}</name>
+  <description>Approval Template for Appdesigner</description>
+  
+
+  <!--**************************************************************************
+  * POM SECTION: Properties Settings
+  ***************************************************************************-->
+
+  <properties>
+
+    <!-- Eclipse WTP: context name -->
+    <web.context.name>${project.artifactId}</web.context.name>
+  
+    <!-- SAPUI5 version depends on parent POM version -->
+    <sapui5.version>${project.parent.version}</sapui5.version>
+    
+  </properties>
+
+
+  <!--**************************************************************************
+  * POM SECTION: Dependency Settings
+  ***************************************************************************-->
+
+  <dependencies>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+    </dependency>
+    
+    <dependency>
+      <groupId>com.sap.ui5</groupId>
+      <artifactId>resource</artifactId> 
+      <version>${sapui5.version}</version> 
+    </dependency>
+
+    <dependency>
+      <groupId>com.sap.ui5</groupId>
+      <artifactId>core</artifactId>
+      <version>${sapui5.version}</version> 
+    </dependency>
+    
+    <!-- mobile stuff -->
+    <dependency>
+      <groupId>com.sap.ui5</groupId>
+      <artifactId>mobile</artifactId>
+      <version>${sapui5.version}</version> 
+    </dependency>
+
+  </dependencies>
+
+  
+</project>

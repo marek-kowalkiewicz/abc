@@ -1,12 +1,15 @@
 <template data-controller-name="untitledproject.Main">
 
 	<div data-sap-ui-type="sap.m.SplitApp" id="app">
-		<div data-sap-ui-aggregation="masterPages">
-			<div data-sap-ui-type="sap.ui.core.mvc.HTMLView" id="leaveRequestsPage" data-view-name="untitledproject.view.LeaveRequests"></div>
+	 	<div data-sap-ui-aggregation="masterPages">		
+	 		<div data-sap-ui-type="sap.ui.core.mvc.HTMLView" id="ApprovalItemsPage" data-view-name="untitledproject.view.ApprovalItems"></div>	
+            <div data-sap-ui-type="sap.ui.core.mvc.HTMLView" id="HistoryPage" data-view-name="untitledproject.view.History"></div>		
 		</div>
 		<div data-sap-ui-aggregation="detailPages">
-			<div data-sap-ui-type="sap.ui.core.mvc.HTMLView" id="detailsPage" data-view-name="untitledproject.view.Details"></div>
-			<div data-sap-ui-type="sap.ui.core.mvc.HTMLView" id="createPage" data-view-name="untitledproject.view.Create"></div>
+          <div data-sap-ui-type="sap.ui.core.mvc.HTMLView" id="DetailPage" data-view-name="untitledproject.view.Detail"></div>
+          <div data-sap-ui-type="sap.ui.core.mvc.HTMLView" id="RejectPage" data-view-name="untitledproject.view.Reject"></div>
+          <div data-sap-ui-type="sap.ui.core.mvc.HTMLView" id="ForwardPage" data-view-name="untitledproject.view.Forward"></div>
+          <div data-sap-ui-type="sap.ui.core.mvc.HTMLView" id="SearchPage" data-view-name="untitledproject.view.Search"></div>                    		
 		</div>
 	</div>
 

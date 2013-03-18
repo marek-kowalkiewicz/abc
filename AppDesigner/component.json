@@ -1,20 +1,37 @@
 {
   "name" : "untitledproject",
-  "description" : "Leave Request Application",
+  "description" : "A generic Approval Process that can be adjusted according to the business scenario and customer requirements.",
+  "keywords" : [ ],
   "contributors" : [ {
-    "name" : "Tino Butz",
-    "email" : "tino.butz@sap.com"
+    "name" : "Olga Kreindlina",
+    "email" : "olga.kreindlina@sap.com"
   }, {
-    "name" : "Stefan Hipfel",
-    "email" : "stefan.hipfel@sap.com"
+    "name" : "Stephan Naundorf",
+    "email" : "stephan.naundorf@sap.com"
+  }, {
+    "name" : "Ian Taylor",
+    "email" : "ian.robert.taylor@sap.com"
+  }, {
+    "name" : "Guang Yang",
+    "email" : "guang.yang@sap.com"
   } ],
   "version" : "1.0",
-  "main" : "Application.js",
   "dependencies" : {
-    "sap.m" : "1.7",
-    "sap.app.component.hr.LeaveRequestList" : "1.0",
-    "sap.app.component.hr.DetailsList" : "1.0"
+    "sap.m" : "1.7"
   },
-  "keywords" : [ "HR" ],
-  "images" : { }
+  "images" : {
+    "accept" : "icons/accept_white.png",
+    "add" : "icons/add_grey_32.png",
+    "approvals" : "icons/approvals_32.png",
+    "attach" : "icons/attachment_32.png",
+    "decline" : "icons/decline_white.png",
+    "doc_attach" : "icons/doc_attachment_32.png",
+    "excel_attach" : "icons/excel_attachment_32.png",
+    "forward" : "icons/forward_white.png",
+    "general_leave" : "icons/general_leave_32.png",
+    "pdf_attach" : "icons/pdf_attachment_32.png",
+    "picture" : "icons/picture_32.png",
+    "ppt_attach" : "icons/ppt_attachment_32.png",
+    "sales_order" : "icons/sales_order_32.png"
+  }
 }
